@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileMenuWidget</class>
+ <widget class="QWidget" name="FileMenuWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>528</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ファイル</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="newFileToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>新規(&amp;N)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/fileopen.png</normaloff>:/images/fileopen.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="openFileToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>開く(&amp;O)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/Open_file.png</normaloff>:/images/Open_file.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="fileSaveToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>上書保存(&amp;S)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/filesave.png</normaloff>:/images/filesave.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="fileSaveAsToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>名前を付けて保存(&amp;A)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/filesaveas.png</normaloff>:/images/filesaveas.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="printToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>印刷(&amp;P)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/fileprint.png</normaloff>:/images/fileprint.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="printPreviewToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>印刷プレビュー(&amp;G)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/Preview.png</normaloff>:/images/Preview.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="informationToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>バージョン情報</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/info.png</normaloff>:/images/info.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="closeToolButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>閉じる(&amp;Q)</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc">
+           <normaloff>:/images/filequit.png</normaloff>:/images/filequit.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

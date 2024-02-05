@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReplaceDialog</class>
+ <widget class="QDialog" name="ReplaceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>164</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>20</y>
+     <width>87</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="searchNextPushButton">
+      <property name="text">
+       <string>次を検索(&amp;F)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="replaceNextPushButton">
+      <property name="text">
+       <string>置換して次に(&amp;R)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="replaceAllPushButton">
+      <property name="text">
+       <string>全て置換(&amp;A)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelButton">
+      <property name="text">
+       <string>キャンセル</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>243</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="searchTextLabel">
+        <property name="text">
+         <string>検索する文字列(&amp;N):</string>
+        </property>
+        <property name="buddy">
+         <cstring>searchTextLineEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="searchTextLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="replacedTextLabel">
+        <property name="text">
+         <string>置換後の文字列(&amp;P):</string>
+        </property>
+        <property name="buddy">
+         <cstring>replacedLineEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="replacedLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="wholeWordsCheckBox">
+        <property name="text">
+         <string>単語単位で探す(&amp;W)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="findCaseSensitivelyCheckBox">
+        <property name="text">
+         <string>大文字と小文字を区別する(&amp;C)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ReplaceDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

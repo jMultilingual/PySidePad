@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ParagraphDialog</class>
+ <widget class="QDialog" name="ParagraphDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>段落</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="indentGroupBox">
+       <property name="title">
+        <string>インデント</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="leftLabel">
+            <property name="text">
+             <string>左(&amp;L):</string>
+            </property>
+            <property name="buddy">
+             <cstring>leftLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="leftLineEdit">
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="rightLabel">
+            <property name="text">
+             <string>右(&amp;R):</string>
+            </property>
+            <property name="buddy">
+             <cstring>rightLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="rightLineEdit">
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="firstLineLabel">
+            <property name="text">
+             <string>最初の行(&amp;F)</string>
+            </property>
+            <property name="buddy">
+             <cstring>firstLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="firstLineEdit">
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="lineHeightGroupBox">
+       <property name="title">
+        <string>間隔</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QFormLayout" name="formLayout_2">
+            <property name="labelAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="horizontalSpacing">
+             <number>100</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>行間(&amp;S):</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineHeightComboBox</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="lineHeightComboBox">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>1.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.15</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.0</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="tenPointPlusCheckBox">
+            <property name="text">
+             <string>段落後に１０ポイントのスペースを追加する(&amp;A)</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="alignmentLabel">
+         <property name="text">
+          <string>整列(&amp;A):</string>
+         </property>
+         <property name="buddy">
+          <cstring>alignmentComboBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="alignmentComboBox">
+         <item>
+          <property name="text">
+           <string>左</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>右</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>中央</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>両端揃え</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>60</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="tabPushButton">
+         <property name="text">
+          <string>タブ(&amp;T)...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ParagraphDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ParagraphDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

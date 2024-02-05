@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageSizeChangeDialog</class>
+ <widget class="QDialog" name="ImageSizeChangeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>120</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageSizeChangeDialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>元の画像サイズを基準にサイズ変更を行う</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="4">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="hLabel">
+         <property name="text">
+          <string>水平方向(&amp;H):</string>
+         </property>
+         <property name="buddy">
+          <cstring>hSpinBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="hSpinBox">
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="vLabel">
+         <property name="text">
+          <string>垂直方向(&amp;V):</string>
+         </property>
+         <property name="buddy">
+          <cstring>vSpinBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="vSpinBox">
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">QLabel{image:url(:/images/document-horizontal.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">QLabel{image:url(:/images/document-vertical.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>縦横比を固定する(&amp;L)</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../../../../../../Desktop/myworks/セルフ出版/ワードパッドを作りながら学ぶPySide初級/images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ImageSizeChangeDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ImageSizeChangeDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>vSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>vSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>hSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>172</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
